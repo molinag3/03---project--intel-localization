@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intel Sustainability Goals Timeline</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/intel-header-logo.svg" alt="Intel Logo" class="logo" />
+      <h1>Sustainability Through the Ages</h1>
+      <p>
+        Explore Intel's journey through time, discovering how our commitment to
+        innovation has shaped a more sustainable future for technology and our planet.
+      </p>
+    </header>
+
+    <div class="timeline-wrapper">
+      <section class="timeline">
+        <div class="container left fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">1968</div>
+              <h3>Intel Founded</h3>
+              <p>
+                Robert Noyce and Gordon Moore rename the newly formed company NM
+                Electronics to Intel Corporation, laying the foundation for decades of
+                technological innovation.
+              </p>
+            </div>
+            <img
+              src="img/Intelpic1.jpg"
+              alt="Intel founders"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+
+        <div class="container right fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">1971</div>
+              <h3>First Microprocessor</h3>
+              <p>
+                Intel debuts the 4004, the world's first commercial microprocessor,
+                igniting the microprocessor revolution and propelling the future of
+                computing devices.
+              </p>
+            </div>
+            <img
+              src="img/intelpic3.jpg"
+              alt="Intel 4004 microprocessor"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+
+        <div class="container left fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">1978</div>
+              <h3>8086 Processor</h3>
+              <p>
+                Launch of the 8086 processor, establishing the x86 architecture that
+                drives countless PCs and servers in the modern era.
+              </p>
+            </div>
+            <img
+              src="img/4.jpg"
+              alt="Intel 8086 processor"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+
+        <div class="container right fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">1985</div>
+              <h3>386 Processor</h3>
+              <p>
+                Intel introduces the 386 processor with 32-bit architecture, ushering in
+                a new era of performance and multitasking for personal computers.
+              </p>
+            </div>
+            <img
+              src="img/intelpic2.jpg"
+              alt="Intel 386 processor"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+
+        <div class="container left fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">2006</div>
+              <h3>Peak GHG Emissions</h3>
+              <p>
+                This year marks Intel's highest annual greenhouse gas emissions for
+                operations. Over subsequent years, Intel invests heavily in chemical
+                abatement, renewable energy, and energy-efficient manufacturing to reverse
+                this trend.
+              </p>
+            </div>
+            <img
+              src="img/intelpic5.jpg"
+              alt="Intel sustainability and climate image"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+
+        <div class="container right fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">2020</div>
+              <h3>RISE Strategy</h3>
+              <p>
+                Intel launches its RISE (Responsible, Inclusive, Sustainable, Enabling)
+                strategy and 2030 goals, aiming to drive industry-wide progress on climate
+                action, water stewardship, and waste reduction.
+              </p>
+            </div>
+            <img
+              src="img/intelpic6.jpg"
+              alt="Intel sustainability strategy"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+
+        <div class="container left fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">2022</div>
+              <h3>Net-Zero By 2040</h3>
+              <p>
+                Intel announces its commitment to achieve net-zero greenhouse gas
+                emissions (Scope 1 and 2) across its global operations by 2040, building
+                on years of environmental initiatives.
+              </p>
+            </div>
+            <img
+              src="img/intelpic7.jpg"
+              alt="Intel net-zero commitment"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+
+        <div class="container right fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">2023</div>
+              <h3>Renewable Electricity</h3>
+              <p>
+                The company achieves 99% renewable electricity usage worldwide, helping
+                to drastically lower carbon emissions and driving progress toward Intel's
+                long-term sustainability goals.
+              </p>
+            </div>
+            <img
+              src="img/intelpic8.jpg"
+              alt="Intel renewable electricity milestone"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+
+        <div class="container left fade-in">
+          <div class="content content-with-image">
+            <div class="content-text">
+              <div class="year">2024</div>
+              <h3>Sustainability Summit</h3>
+              <p>
+                Intel hosts its first Sustainability Summit, uniting suppliers,
+                government officials, and industry leaders to collaborate on
+                next-generation sustainable semiconductor manufacturing.
+              </p>
+            </div>
+            <img
+              src="img/intelpic9.jpg"
+              alt="Intel sustainability summit"
+              class="timeline-image"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="panel footer-panel">
+      <p class="scroll-note">Scroll to view timeline | Hover over cards to learn more!</p>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      });
+
+      document.querySelectorAll('.fade-in').forEach((item) => {
+        observer.observe(item);
+      });
+    </script>
+  </body>
+</html>
+
